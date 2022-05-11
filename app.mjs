@@ -1,19 +1,15 @@
-import Client from 'shopify-buy';
 import express from "express"; 
-import {} from 'dotenv/config';
-import fetch from 'node-fetch';
-import router from './src/router.mjs';
+import {} from "dotenv/config";
+import router from "./src/router.mjs";
 
+// Instantiate the app
 const app = express();
 app.set("views", "./src/views");
 app.set("view engine", "ejs");
 app.use(express.static("./public"));
 
-const shopifyClient = Client.buildClient({
-    domain: "eldrippy.myshopify.com",
-    storefrontAccessToken: process.env.SHOPIFY_CLIENT
-}, fetch);
-
+// Use the router
 app.use(router);
 
+// Start the server
 app.listen(process.env.PORT, () => console.log(`Started server on port ${process.env.PORT}`));
