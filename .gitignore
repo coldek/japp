@@ -1,0 +1,5 @@
+.env
+ngrok.exe
+node_modules
+.vscode
+public/styles/style.css

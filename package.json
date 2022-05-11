@@ -1,0 +1,25 @@
+{
+  "name": "japp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.mjs",
+  "scripts": {
+    "start": "node app",
+    "dev": "nodemon",
+    "build": "npm run tailwind:css && npm start",
+    "tailwind:css": "postcss public/styles/tailwind.css -o public/styles/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.7",
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.7",
+    "express": "^4.18.1",
+    "node-fetch": "^3.2.4",
+    "postcss": "^8.4.13",
+    "postcss-cli": "^9.1.0",
+    "shopify-buy": "^2.15.1",
+    "tailwindcss": "^3.0.24"
+  }
+}
