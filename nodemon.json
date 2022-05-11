@@ -1,7 +1,6 @@
 {
-    "events": {
-      "restart": "npm run tailwind:css"
-    },
-    "ext": "js,ejs,mjs,cjs"
-
-  }
+  "events": {
+    "restart": "npm run tailwind:css"
+  },
+  "ext": "js,ejs,mjs,cjs"
+}
